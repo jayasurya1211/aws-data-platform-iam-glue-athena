@@ -64,3 +64,9 @@ Policies follow least-privilege and group-based access.
 - Alarm triggers when ETL job execution fails
 - Optional SNS email notification for alerts
 
+- ## Data Quality & Validation
+- Row count validation performed using Athena
+- Null checks on critical columns
+- Basic sanity checks to ensure data correctness
+
+
