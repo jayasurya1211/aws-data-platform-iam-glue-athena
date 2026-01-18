@@ -1,5 +1,5 @@
 
-# AWS Data Platform – IAM, S3, Glue, Athena (v2)
+# AWS Data Platform – IAM, S3, Glue, Athena (v3)
 
 ## Overview
 This project implements a production-style AWS data platform using
@@ -58,3 +58,9 @@ Policies follow least-privilege and group-based access.
 - Partitions loaded with:
   ```sql
   MSCK REPAIR TABLE
+
+  ## Monitoring & Alerts
+- CloudWatch alarm configured for AWS Glue job failures
+- Alarm triggers when ETL job execution fails
+- Optional SNS email notification for alerts
+
