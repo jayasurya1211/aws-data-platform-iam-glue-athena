@@ -70,3 +70,11 @@ Policies follow least-privilege and group-based access.
 - Basic sanity checks to ensure data correctness
 
 
+## Event-Driven ETL Automation
+
+The pipeline is automatically triggered when new data is uploaded to the raw S3 zone.
+
+Workflow:
+
+S3 Raw Upload → Lambda Trigger → Glue ETL Job → Curated Parquet Data → Athena Query
+
